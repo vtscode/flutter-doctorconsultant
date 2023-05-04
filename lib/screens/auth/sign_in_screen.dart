@@ -72,11 +72,12 @@ class SignInScreen extends StatelessWidget {
                             // It saved our inputs
                             _formKey.currentState!.save();
                             //  Sign in also done
-                            Navigator.pushReplacement(
+                            Navigator.pushAndRemoveUntil(
                               context,
                               MaterialPageRoute(
                                 builder: (context) => const HomePage(),
                               ),
+                              (Route<dynamic> route) => false,
                             );
                           }
                         },
