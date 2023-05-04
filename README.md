@@ -2,7 +2,7 @@
 
 ![Preview](/gif.gif)
 
-![App Full UI](/previews/1.png)
+![Home UI](/previews/home.png)
 ![Episode 1 - Splash and Auth Page](/previews/2.png)
 
 **List Of Screens:**
