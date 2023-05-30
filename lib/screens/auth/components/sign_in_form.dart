@@ -28,6 +28,7 @@ class _SignInFormState extends State<SignInForm> {
         children: [
           const TextFieldName(text: "Email"),
           TextFormField(
+            initialValue: "test@email.com",
             keyboardType: TextInputType.emailAddress,
             decoration: const InputDecoration(hintText: "test@email.com"),
             autovalidateMode: AutovalidateMode.onUserInteraction,
@@ -39,6 +40,7 @@ class _SignInFormState extends State<SignInForm> {
           TextFormField(
             // We want to hide our password
             obscureText: true,
+            initialValue: "123123!2qweA",
             decoration: const InputDecoration(hintText: "******"),
             validator: passwordValidator,
             onSaved: (password) => _password = password!,
